@@ -1,4 +1,4 @@
-.adopt-container{
+.section-container{
     background-color: #FFF29C;
     display: flex;
     flex-direction: row;
@@ -33,11 +33,17 @@
     opacity: 85%;
 }
 
+.dog-bone{
+    opacity: 65%;
+    margin-top: -70px;
+    float: right;
+}
+
 @media screen and (max-width: 800px){
     .main-bg{
         max-width: 80%;
     }
-    .adopt-container{
+    .section-container{
         flex-direction: column;
     }
     .main-bg{
@@ -51,5 +57,9 @@
 
     .page-heading{
         margin-top: -90px;
+    }
+
+    .about-section{
+        flex-direction: column-reverse;
     }
 }
