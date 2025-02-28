@@ -7,7 +7,8 @@ import logo from "../assets/homepage/logo.png"
 const Footer = () => {
     return (
         <div className="footer" style={{backgroundColor: "#724319"}}>
-            <div style={{display: 'flex', flexDirection: "row", justifyContent: 'space-between', paddingLeft: 20, paddingRight: 20}}>
+            <div style={{display: 'flex', flexDirection: "row", justifyContent: 'space-between', 
+                paddingTop: 120, paddingLeft: 20, paddingRight: 20}}>
 
                 {/* Nav bar vertical */}
                 <div className="nav-bar-footer-container">
@@ -24,7 +25,7 @@ const Footer = () => {
                 </div>
 
                 {/* Social Media */}
-                <div className="contact-container" style={{paddingLeft: 40}}>
+                <div className="contact-container" style={{paddingLeft: 40, marginTop: 10}}>
                     <img className="contact-icon" src={insta} alt="insta" />
                     <img className="contact-icon" src={fb} alt="fb" />
                     <img className="contact-icon" src={linkedin} alt="linked-in" />

@@ -76,11 +76,24 @@
     background: none;
     border: none;
     cursor: pointer;
+    max-width: 150px;
 }
 
 .submit-signup:hover{
     background-color: black;
 }
+
+.map-visit{
+    left: 0;
+}
+
+.phone-connector{
+    position: absolute;
+    right: 0;
+    width: 20%;
+    margin-top: -215px;
+}
+
 
 @media screen and (max-width: 800px){
     .main-bg{
@@ -123,5 +136,14 @@
         margin-left: 100px;
         max-width: 200px;
         font-size: 18px;
+    }
+
+    .map-container{
+        flex-direction: column-reverse;
+    }
+
+    .phone-connector{
+        width: 30%;
+        margin-top: -100px;
     }
 }

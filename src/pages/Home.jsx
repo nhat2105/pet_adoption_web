@@ -4,6 +4,8 @@ import adoptMain from "../assets/homepage/adoptMain.png"
 import aboutMain from '../assets/homepage/aboutMain.png'
 import bone from "../assets/homepage/dog-bone.png"
 import signupMain from "../assets/homepage/signingUp.png"
+import map from "../assets/homepage/map.png"
+import phone from "../assets/homepage/phone.png"
 
 
 const HomePage = () =>{
@@ -44,6 +46,7 @@ const HomePage = () =>{
                 </div>
 
                 <div style={{alignItems: "center"}}>
+                    {/* bone connector */}
                     <img className="dog-bone" src={bone} alt="dog-bone" />
                     <img className="main-bg" style={{paddingTop: "30px", paddingLeft: "50px"}} 
                         src={aboutMain} alt="about-main" />
@@ -74,6 +77,27 @@ const HomePage = () =>{
                     
                 </div>          
             </div>
+
+            {/* Visit section */}
+            <div id="contact" className="section-container map-container" style={{backgroundColor: "#B99B5B"}}>
+                <img src={map} style={{marginTop: "30px", marginBottom: "30px"}} className="main-bg map-visit" alt=""/>
+                <div style={{justifyItems: 'center'}}>
+
+                    <h2 className="page-heading" 
+                    style={{opacity: "95%", marginTop: "40px", marginLeft: "40px"}}>
+                        Want to Visit?</h2>
+
+                    <p className="page-description" style={{opacity: '95%', color:" #724319", marginBottom: "30px"}}
+                    >We are open from Monday - Friday: 7AM - 4PM. 
+                    <br />
+                    Come join us and visit 
+                    in person the cutest angels in the planet... 
+                    <br /> Except Sarah Paulson though... </p>
+                </div>
+            </div>
+
+            <img className="phone-connector" src={phone} alt="phone-connector" />     
+
         </div>
 
     )
