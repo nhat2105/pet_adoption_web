@@ -3,6 +3,7 @@ import React from "react";
 import adoptMain from "../assets/homepage/adoptMain.png"
 import aboutMain from '../assets/homepage/aboutMain.png'
 import bone from "../assets/homepage/dog-bone.png"
+import signupMain from "../assets/homepage/signingUp.png"
 
 
 const HomePage = () =>{
@@ -49,6 +50,30 @@ const HomePage = () =>{
                 </div>
             </div>
 
+            {/* Sign up section */}
+            <div id="signup" className="section-container" style={{backgroundColor: "#724319"}}>
+                <div style={{justifyItems: 'center'}}>
+                    <h2 className="page-heading" 
+                    style={{color:"#FFF29C", opacity: "80%", marginTop: "40px", marginLeft: "40px"}}>
+                        Interested?</h2>
+                    <p style={{color: "#FFFFFF", opacity: "64%"}} className="page-text">Sign Up!</p>
+                    <p className="page-description" style={{color: "#FFFFFF", opacity: "63%"}}>Be a member today!</p>
+                </div>
+                
+                <div>
+                    <div className="decor-blob">
+                        <input type="text" className="blob-input" title="Test" placeholder="Name"/>
+                        <input type="email" className="blob-input" title="Test" placeholder="Email"/>
+                        <input type="text" className="blob-input" title="Test" placeholder="City"/>
+                       
+                        <button className="page-text submit-signup" style={{marginLeft: "40px", marginTop: "20px"}}>Submit</button>
+                    </div>
+                   
+                    <img className="main-bg signup-bg" src={signupMain} alt="singnup"/>
+                
+                    
+                </div>          
+            </div>
         </div>
 
     )

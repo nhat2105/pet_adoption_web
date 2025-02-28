@@ -14,7 +14,7 @@
     padding-top: 5px; 
     font-size: 5rem;
     color: #724319;
-    z-index: 1;
+    z-index: 2;
 }
 
 .page-text{
@@ -31,12 +31,55 @@
     font-size: large;
     z-index: 1;
     opacity: 85%;
+    text-align: justify;
 }
 
 .dog-bone{
     opacity: 65%;
     margin-top: -70px;
     float: right;
+}
+
+.decor-blob {
+    position: absolute;
+    right: 50px;
+    width: 850px;
+    height: 700px;
+    background: #FFF29C;
+    border-radius: 50% 40% 60% 30% / 50% 60% 40% 30%;
+    z-index: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blob-input{
+    border-radius: 30px;
+    opacity: 77%;
+    height: 70px;
+    font-size: 30px;
+    max-width: 480px;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 180px;
+    background-color: #724319;
+}
+
+.signup-bg{
+    margin-top:505px;
+    position: relative;
+    margin-left: 60px;
+}
+
+.submit-signup{
+    text-decoration: underline;  
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-signup:hover{
+    background-color: black;
 }
 
 @media screen and (max-width: 800px){
@@ -61,5 +104,24 @@
 
     .about-section{
         flex-direction: column-reverse;
+    }
+
+    .signup-bg{
+        margin-top:385px;
+        margin-left: 40px;
+    }
+
+    .decor-blob{
+        width: 420px;
+        height: 400px;
+        right: 40px;
+    }
+
+    .blob-input{
+        height: 50px;
+        margin-top: 45px;
+        margin-left: 100px;
+        max-width: 200px;
+        font-size: 18px;
     }
 }
