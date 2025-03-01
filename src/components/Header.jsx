@@ -16,6 +16,7 @@ const Header = () => {
                     <div className="nav-bar">
                         <a className="nav-item" href="#home" >HOME</a>
                         <a className="nav-item" href="#about">ABOUT US</a>
+                        <a className="nav-item" href="#pets">ADOPT</a>
                         <a className="nav-item" href="#signup">SIGN UP</a>
                         <a className="nav-item" href="#contact">CONTACT</a>
                     </div>

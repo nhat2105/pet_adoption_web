@@ -6,6 +6,9 @@ import bone from "../assets/homepage/dog-bone.png"
 import signupMain from "../assets/homepage/signingUp.png"
 import map from "../assets/homepage/map.png"
 import phone from "../assets/homepage/phone.png"
+import cat from "../assets/homepage/meow.png"
+import dog from "../assets/homepage/dog.png"
+import hamster from "../assets/homepage/hamster.png"
 
 
 const HomePage = () =>{
@@ -13,7 +16,7 @@ const HomePage = () =>{
         <div className="home-container">
 
             {/* Adopt section */}
-            <div id="home" className="section-container">
+            <section id="home" className="section-container">
                 <img className="main-bg" src={adoptMain} alt="adopt-main"/>
 
                 {/* Test description for adopt */}
@@ -26,15 +29,11 @@ const HomePage = () =>{
                     and dedicated individuals with the common goal of saving dogs and cats and 
                     giving them that second chance.</p>
                 </div>
-            </div>
+            </section>
 
             {/* About section */}
-            <div id="about" className="section-container about-section" 
+            <section id="about" className="section-container about-section" 
             style={{backgroundColor: "#ED8A0A"}}>
-                
-                <div style={{backgroundColor: "#ED8A0A", }}>
-                    
-                </div>
                 
                 <div style={{justifyItems: 'center'}}> 
                     <h1 className="page-heading" style={{color: "#F6D912", opacity: "69%", marginTop: "60px"}}>About Us</h1>
@@ -51,10 +50,42 @@ const HomePage = () =>{
                     <img className="main-bg" style={{paddingTop: "30px", paddingLeft: "50px"}} 
                         src={aboutMain} alt="about-main" />
                 </div>
-            </div>
+            </section>
+
+            {/* Pets Section */}
+            <section id="pets" className="section-container" 
+                style={{backgroundColor: "#F6D912", justifyContent:'center', flexDirection: "column"}}>
+                <h1 className="page-heading" style={{marginTop: 40}}>Our Pets</h1>
+
+                <div className="pets-circle-container"> 
+                    <div>
+                        <div className="circle-bg">
+                            <img src={dog} alt="dog" style={{maxWidth: 300}} />
+                        </div>
+
+                        <h2 className="page-text" style={{marginLeft: -40, color: "black"}}>Dogs</h2> 
+                    </div>
+
+                    <div>
+                        <div className="circle-bg" style={{backgroundColor: "#724319", opacity: "90%"}}>
+                            <img src={cat} alt="cat" style={{marginTop: 30}} />
+                        </div> 
+                        <h2 className="page-text" style={{color: "black", marginLeft: -40}}>Cats</h2> 
+                    </div> 
+
+                    <div>
+                        <div className="circle-bg" style={{backgroundColor: "#FFF29C"}}>
+                            <img src={hamster} alt="hamster" style={{maxWidth: 180}} />
+                        </div>
+
+                        <h2 className="page-text" style={{color: "black", marginLeft: -20}}>Hamsters</h2> 
+                    </div>
+                </div>             
+
+            </section>
 
             {/* Sign up section */}
-            <div id="signup" className="section-container" style={{backgroundColor: "#724319"}}>
+            <section id="signup" className="section-container" style={{backgroundColor: "#724319"}}>
                 <div style={{justifyItems: 'center'}}>
                     <h2 className="page-heading" 
                     style={{color:"#FFF29C", opacity: "80%", marginTop: "40px", marginLeft: "40px"}}>
@@ -76,10 +107,10 @@ const HomePage = () =>{
                 
                     
                 </div>          
-            </div>
+            </section>
 
             {/* Visit section */}
-            <div id="contact" className="section-container map-container" style={{backgroundColor: "#B99B5B"}}>
+            <section id="contact" className="section-container map-container" style={{backgroundColor: "#B99B5B"}}>
                 <img src={map} style={{marginTop: "30px", marginBottom: "30px"}} className="main-bg map-visit" alt=""/>
                 <div style={{justifyItems: 'center'}}>
 
@@ -94,7 +125,7 @@ const HomePage = () =>{
                     in person the cutest angels in the planet... 
                     <br /> Except Sarah Paulson though... </p>
                 </div>
-            </div>
+            </section>
 
             <img className="phone-connector" src={phone} alt="phone-connector" />     
 

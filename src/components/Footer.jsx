@@ -14,6 +14,7 @@ const Footer = () => {
                 <div className="nav-bar-footer-container">
                     <a className="nav-item" href="#home" >HOME</a>
                     <a className="nav-item" href="#about">ABOUT</a>
+                    <a className="nav-item" href="#pets">ADOPT</a>
                     <a className="nav-item" href="#signup">SIGN UP</a>
                     <a className="nav-item" href="#contact">CONTACT</a>
                 </div>  
