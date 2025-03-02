@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Header from "./Header.jsx";
-import Footer from "./Footer";
-import Routes from "../routes/routes";
+import Footer from "./Footer.jsx";
+import Routes from "../routes/routes.js";
 
 const MainLayout = () =>{
     return(

@@ -9,9 +9,16 @@ import phone from "../assets/homepage/phone.png"
 import cat from "../assets/homepage/meow.png"
 import dog from "../assets/homepage/dog.png"
 import hamster from "../assets/homepage/hamster.png"
+import { useNavigate } from "react-router-dom";
 
 
 const HomePage = () =>{
+    const navigate = useNavigate()
+
+    const handlePetTypeClick = (petType) => {
+        navigate(`/${petType}`);
+    };
+
     return(
         <div className="home-container">
 
@@ -60,25 +67,25 @@ const HomePage = () =>{
                 <div className="pets-circle-container"> 
                     <div>
                         <div className="circle-bg">
-                            <img src={dog} alt="dog" style={{maxWidth: 300}} />
+                            <img src={dog} alt="dog" style={{maxWidth: 300}} onClick={() => handlePetTypeClick("dogs")}  />
                         </div>
 
-                        <h2 className="page-text" style={{marginLeft: -40, color: "black"}}>Dogs</h2> 
+                        <h2 className="page-text" style={{marginLeft: -40, color: "white"}}>Dogs</h2> 
                     </div>
 
                     <div>
                         <div className="circle-bg" style={{backgroundColor: "#724319", opacity: "90%"}}>
-                            <img src={cat} alt="cat" style={{marginTop: 30}} />
+                            <img src={cat} alt="cat" style={{marginTop: 30}} onClick={() => handlePetTypeClick("cats")} />
                         </div> 
-                        <h2 className="page-text" style={{color: "black", marginLeft: -40}}>Cats</h2> 
+                        <h2 className="page-text" style={{color: "white", marginLeft: -40}}>Cats</h2> 
                     </div> 
 
                     <div>
                         <div className="circle-bg" style={{backgroundColor: "#FFF29C"}}>
-                            <img src={hamster} alt="hamster" style={{maxWidth: 180}} />
+                            <img src={hamster} alt="hamster" style={{maxWidth: 180}}  onClick={() => handlePetTypeClick("hamsters")} />
                         </div>
 
-                        <h2 className="page-text" style={{color: "black", marginLeft: -20}}>Hamsters</h2> 
+                        <h2 className="page-text" style={{color: "white", marginLeft: -20 }} >Hamsters</h2> 
                     </div>
                 </div>             
 
