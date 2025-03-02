@@ -1,4 +1,5 @@
 {
+  "homepage": "https://nhat2105.github.io/pet_adoption_web",
   "name": "pet_adoption_web",
   "version": "0.1.0",
   "private": true,
@@ -29,6 +30,7 @@
       "react-app/jest"
     ]
   },
+  
   "browserslist": {
     "production": [
       ">0.2%",
