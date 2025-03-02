@@ -1,4 +1,3 @@
 # pet_adoption_web
 
-`npm install .`
-`npm start`
+Just the frontend, no mocks-up or API for backend at all (just a design I guess cuz I'll have to focus on graduation...)
