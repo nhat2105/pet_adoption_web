@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.46720e8d.css",
+    "main.js": "/static/js/main.122dee86.js",
+    "static/media/aboutMain.png": "/static/media/aboutMain.45f8b581afda55919429.png",
+    "static/media/adoptMain.png": "/static/media/adoptMain.e31b5a2d3b48c322051b.png",
+    "static/media/signingUp.png": "/static/media/signingUp.4c2b39c40f20ba19d4f2.png",
+    "static/media/dog.png": "/static/media/dog.8276f930471a9b8df851.png",
+    "static/media/hamster.png": "/static/media/hamster.1d6bf0e817503975e6bd.png",
+    "static/media/map.png": "/static/media/map.06f406d5f1e3d396926f.png",
+    "static/media/meow.png": "/static/media/meow.41807b2c8834fa964a70.png",
+    "static/media/phone.png": "/static/media/phone.780d561408ccd292bbd2.png",
+    "static/media/dog-bone.png": "/static/media/dog-bone.c7eb88c012945076f61c.png",
+    "index.html": "/index.html",
+    "main.46720e8d.css.map": "/static/css/main.46720e8d.css.map",
+    "main.122dee86.js.map": "/static/js/main.122dee86.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.46720e8d.css",
+    "static/js/main.122dee86.js"
+  ]
+}
