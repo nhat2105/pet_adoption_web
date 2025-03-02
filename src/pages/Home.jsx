@@ -8,8 +8,7 @@ import map from "../assets/homepage/map.png"
 import phone from "../assets/homepage/phone.png"
 import cat from "../assets/homepage/meow.png"
 import dog from "../assets/homepage/dog.png"
-import hamster from "../assets/homepage/hamster.png"
-
+import hamster from "../assets/homepage/hamster.png";
 
 const HomePage = () =>{
     return(
